@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root{
-    --amarillo: rgb(228, 228, 25);
+    --amarillo: rgba(222, 222, 20, 0.735);
     --rojo: red;
     --verde: black;
     --degradado:linear-gradient(90deg, var(--verde),var(--amarillo))
@@ -68,7 +68,7 @@ section{
 
 /*header*/
 header{
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -84,10 +84,6 @@ header{
 header .logo{
     font-size: 2rem;
     color: var(--verde);
-}
-
-header .logo span{
-    color: var(--amarillo);
 }
 
 header .navbar a{
@@ -120,30 +116,33 @@ header label{
     background: url(../imagen/cieloestrellado.png) no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: justify;
 }
 
 .inicio .imagen img{
     width: 40vw;
+    padding: 10rem;
     animation: float 3s linear infinite;
 }
 
 @keyframes float{
     0%, 100%{
-        transform: translateY(0rem);
+        transform: translateY(2rem);
     }
     50%{
-        transform: translateY(-3.5rem);
+        transform: translateY(-2rem);
     }
 }
 
 .inicio .content h3{
     font-size: 5.5rem;
-    color: #333;
+    color: var(--amarillo);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .inicio .content h3 span{
-    color: var(--verde);
+    color: #333;
     text-transform: uppercase;
 }
 

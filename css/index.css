@@ -176,6 +176,7 @@ header label{
     font-size: 1.3rem;
     color: #666;
     padding: 1rem 0;
+    text-align: justify;
 }
 
 .detalles .caja-contenedor .caja img{
@@ -273,14 +274,14 @@ header label{
 /*acerca de fin*/
 
 /*opiniones inicio*/
-.opiniones .caja-contenedor{
+.refleciones .caja-contenedor{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.opiniones .caja-contenedor .caja{
+.refleciones .caja-contenedor .caja{
     background: white;
     margin: 1rem;
     padding: 1rem;
@@ -292,38 +293,30 @@ header label{
     border-radius: .5rem;
 }
 
-.opiniones .caja-contenedor .caja .fa-atom{
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 8rem;
-    color: var(--amarillo);
-    opacity: .3;
-}
-
-.opiniones .caja-contenedor .caja .user img{
+.refleciones .caja-contenedor .caja .user img{
     border-radius: 50%;
     object-fit: cover;
-    height: 8rem;
-    width: 8rem;
+    height: 20rem;
+    width: 20rem;
     margin-top: 2rem;
 }
 
-.opiniones .caja-contenedor .caja .user h3{
+.refleciones .caja-contenedor .caja .user h3{
     color: var(--verde);
     font-size: 2rem;
 }
 
-.opiniones .caja-contenedor .caja .stars i{
+.refleciones .caja-contenedor .caja .stars i{
     color:var(--verde);
     font-size: 1.5rem;
     padding: 1rem 0;
 }
 
-.opiniones .caja-contenedor .caja .comentrios{
+.refleciones .caja-contenedor .caja .reflecioness{
     color: #666;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1rem;
+    text-align: justify;
 }
 /*fin opiniones*/
 
@@ -483,18 +476,18 @@ header label{
     position: fixed;
     z-index: 999;
     border-radius: 50%;
-    bottom: 50px;
+    bottom: 8rem;
     right: 1rem;
-    padding: 1rem;
+    padding: .5rem;
     transition: ease 1s;
     animation: efecto 1.5s infinite;
 }
 @keyframes efecto {
     0%{
-        box-shadow: 0 0 0 0 rgb(232, 242, 43);
+        box-shadow: 0 0 0 1rem rgb(232, 242, 43);
     }
     100%{
-        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 5rem rgba(0, 0, 0, 0);
     }
 }
 
@@ -504,16 +497,6 @@ header label{
     transition: .3s;
 }
 
-.boton {
-    width: 0.8rem;
-    transition: ease 1s;
-}
-
-.contenedor-redes{
-    text-align: center;
-    align-items: flex;
-    flex-direction: column;
-}
 
 /*boton whatsapp fin*/
 

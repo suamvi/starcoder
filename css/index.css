@@ -81,9 +81,8 @@ header{
     z-index: 1000;
 }
 
-header .logo{
-    font-size: 2rem;
-    color: var(--verde);
+header .logotarcoder{
+    cursor: pointer;
 }
 
 header .navbar a{
@@ -109,7 +108,7 @@ header label{
 }
 /*fin header*/
 /*inicio*/
-.inicio{
+.start{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +118,7 @@ header label{
     text-align: justify;
 }
 
-.inicio .imagen img{
+.start .imagen img{
     width: 40vw;
     padding: 10rem;
     animation: float 3s linear infinite;
@@ -134,32 +133,32 @@ header label{
     }
 }
 
-.inicio .content h3{
+.start .content h3{
     font-size: 5.5rem;
     color: var(--amarillo);
     text-transform: uppercase;
     text-align: center;
 }
 
-.inicio .content h3 span{
+.start .content h3 span{
     color: #333;
     text-transform: uppercase;
 }
 
-.inicio .content p{
+.start .content p{
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
 }
 /*fin inicio*/
 /*detalles*/
-.detalles .caja-contenedor{
+.level .caja-contenedor{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.detalles .caja-contenedor .caja{
+.level .caja-contenedor .caja{
     flex: 1 1 30rem;
     background: white;
     border-radius: .5rem;
@@ -172,18 +171,18 @@ header label{
     transition: .2s linear;
 }
 
-.detalles .caja-contenedor .caja p{
+.level .caja-contenedor .caja p{
     font-size: 1.3rem;
     color: #666;
     padding: 1rem 0;
     text-align: justify;
 }
 
-.detalles .caja-contenedor .caja img{
+.level .caja-contenedor .caja img{
     height: 15rem;
 }
 
-.detalles .caja-contenedor .cajas h3{
+.level .caja-contenedor .cajas h3{
     font-size: 2rem;
     color: #333;
     padding-top: 1rem;
@@ -192,7 +191,7 @@ header label{
 /*fin detalles*/
 /*acerca de inicio*/
 
-.acerca_de{
+.consejos{
     background: url(../imagen/fondoestrellas.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -201,7 +200,7 @@ header label{
     width: 100%;
 }
 
-.acerca_de .headingconsejo{
+.consejos .headingconsejo{
     text-align: center;
     background: var(--amarillo);
     color: transparent;
@@ -212,31 +211,31 @@ header label{
     padding: 1rem;
 }
 
-.acerca_de .columna{
+.consejos .columna{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.acerca_de .columna .image{
+.consejos .columna .image{
     flex: 1 1 50rem;
 }
 
-.acerca_de .columna .image img{
+.consejos .columna .image img{
     width: 100%;
 }
 
 /* texto de starwars inicio */
-.acerca_de .columna .starwars{
+.consejos .columna .starwars{
     flex: 30 10 30rem;
 }
 
-.acerca_de .columna .starwars h3{
+.consejos .columna .starwars h3{
     font-size: 4rem;
     color: var(--amarillo);
 }
 
-.acerca_de .columna .starwars p{
+.consejos .columna .starwars p{
     font-size: 1.7rem;
     color: var(--amarillo);
     padding: 80rem 1;
@@ -244,7 +243,7 @@ header label{
     max-width: 1080px;
 }
 
-.acerca_de .starwars{
+.consejos .starwars{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -268,7 +267,7 @@ header label{
 } */
 /*texto star wars fin*/
 
-.acerca_de .columna .content .bottons a:last-child{
+.consejos .columna .content .bottons a:last-child{
     margin-left: 40rem;
 }
 /*acerca de fin*/
@@ -512,6 +511,10 @@ header label{
         padding: 0 3%;
         padding-top: 7.5rem;
         padding-bottom: 2rem;
+        
+    }
+    header .logotarcoder{
+        padding: 2rem;
     }
 }
 
@@ -520,7 +523,6 @@ header label{
         visibility: visible;
         opacity: 1;
     }
-
     header .navbar{
         position: absolute;
         top: 100%;

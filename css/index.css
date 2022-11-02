@@ -236,7 +236,6 @@ header label{
     color: var(--amarillo);
 }
 
-
 .acerca_de .columna .starwars p{
     font-size: 1.7rem;
     color: var(--amarillo);
@@ -250,8 +249,9 @@ header label{
     align-items: center;
     flex-wrap: wrap;
     text-align: justify;
-    transform: perspective(200px) rotateX(24deg);
-    animation: introwar 30s linear infinite;
+    transform: perspective(300px) rotateX(10deg);
+}
+    /* animation: introwar 30s linear infinite;
 }
 
 @keyframes introwar{
@@ -265,7 +265,7 @@ header label{
     100%{
         transform: perspective(200px) rotateX(14deg) translateY(-1000px)
     }
-}
+} */
 /*texto star wars fin*/
 
 .acerca_de .columna .content .bottons a:last-child{
